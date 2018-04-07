@@ -19,7 +19,7 @@ public class IntegerQueue : SerializableQueue<int>
 }
 ```
 
-Now you'll be ready to use the `IntegerQueue` collection in your scripts. For example:
+Then you'd be ready to use the `IntegerQueue` collection in your scripts. For example:
 
 ```C#
 using UnityEngine;
