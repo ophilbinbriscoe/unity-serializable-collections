@@ -43,3 +43,4 @@ public class SomeBehaviour : MonoBehaviour
     }
 }
 ```
+Wherever possible, collections have been implemented to be compatible with their .NET counterparts (either by extending .NET collections or implementing corresponding .NET interfaces), however in some cases this was not possible (ie for HashSets, where the .NET implementation has no corresponding interface and extending HashSet<T> introduced uncircumventable serialization errors). In these cases, the serializable collection does its best to reproduce the .NET collection's members and behaviour.
