@@ -25,8 +25,12 @@ Now you'll be ready to use the `IntegerQueue` collection in your scripts. Exampl
 public class SomeBehaviour : MonoBehaviour
 {
     // You'll be able to set some values in the inspector,
-    // and everything will persist between Play/Stop
+    // and everything will persist between Play/Stop.
     public IntegerQueue myQueue = new IntegerQueue( 10 );
+
+    // You don't have to explicitly initialize a collection, if you'd prefer,
+    // you can let Unity's serialization system initialize an empty one for you.
+    public IntegerQueue anEmptyQueue;
 
     void Update ()
     {
