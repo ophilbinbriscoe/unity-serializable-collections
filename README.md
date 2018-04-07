@@ -2,7 +2,7 @@
 Serializable versions of generic C# collections (Stack, Queue, Dictionary, HashSet, and more).
 
 ## Usage
-Due to limitations in Unity's serialization system, you will need to create non-generic subclasses of these collections for every generic type argument you need to use them with. For example:
+Due to limitations in Unity's serialization system, you will need to create non-generic subclasses of these collections for every generic type argument you need to use them with. For example, if you wanted to use a `SerializableQueue` of `int`s, you'd create a C# file somewhere in your project that looked like this:
 
 ```C#
 // This attribute tells Unity to try and serialize this class,
@@ -19,9 +19,11 @@ public class IntegerQueue : SerializableQueue<int>
 }
 ```
 
-Now you'll be ready to use the `IntegerQueue` collection in your scripts. Example:
+Now you'll be ready to use the `IntegerQueue` collection in your scripts. For example:
 
 ```C#
+using UnityEngine;
+
 public class SomeBehaviour : MonoBehaviour
 {
     // You'll be able to set some values in the inspector,
