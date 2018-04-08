@@ -14,7 +14,8 @@ public class IntegerQueue : SerializableQueue<int>
     public IntegerQueue () : base() { }
 
     // Another possible constructor
-    // (you don't have to define these, but if you want to use a particular constructor, you'll need to include it here)
+    // (you don't have to define these, but if you want to use a
+    // particular constructor, you'll need to include it here)
     public IntegerQueue ( int count ) : base( count) { }
 }
 ```
