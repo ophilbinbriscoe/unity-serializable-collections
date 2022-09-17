@@ -1,4 +1,4 @@
-# Serializable Collections
+# unity-serializable-collections
 Serializable versions of generic C# collections (Stack, Queue, Dictionary, HashSet, and more).
 
 ## Usage
